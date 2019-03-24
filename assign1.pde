@@ -1,4 +1,4 @@
-PImage bg , groundhog , soil, life, soldier,robot;
+PImage bg , groundHog , soil, life, soldier,robot;
 
 int x=10; 
 int soldierX;
@@ -17,7 +17,7 @@ int speedX;
 void setup() {
 	size(640, 480, P2D);
   bg = loadImage("img/bg.jpg");
-  groundhog = loadImage("img/groundhog.png");
+  groundHog = loadImage("img/groundhog.png");
   soil = loadImage("img/soil.png");
   life = loadImage("img/life.png");
   soldier = loadImage("img/soldier.png");
@@ -28,7 +28,7 @@ void setup() {
   robotY = floor(random(4)+2);
   robotY = robotY*80;
   laserX = robotX+25;
-  laserX2 = robotX-40;
+  laserX2 = laserX;
   laserY = robotY+37;
   laserY2 = robotY+37;
  
@@ -47,7 +47,7 @@ void draw() {
   image(soil,0,160);
  
 //groundhog
-  image(groundhog,280,80);
+  image(groundHog,280,80);
   
 //life
   image(life,10,10);
